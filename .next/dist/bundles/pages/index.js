@@ -84,19 +84,24 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 var _jsxFileName = '/Users/maupal/Lab/next-experiments/pages/index.jsx';
 
 
+// Adds server generated styles to emotion cache.
+// '__NEXT_DATA__.ids' is set in '_document.js'
+if (typeof window !== 'undefined') {
+  hydrate(window.__NEXT_DATA__.ids);
+}
 /* harmony default export */ __webpack_exports__["default"] = (function () {
-  Object(__WEBPACK_IMPORTED_MODULE_1_react_emotion__["injectGlobal"])('html,body{padding:3rem 1rem;margin:0;background:papayawhip;min-height:100%;font-family:Helvetica,Arial,sans-serif;font-size:24px;}');
+  injectGlobal('html,body{padding:3rem 1rem;margin:0;background:papayawhip;min-height:100%;font-family:Helvetica,Arial,sans-serif;font-size:24px;}');
   var basicStyles = /*#__PURE__*/Object(__WEBPACK_IMPORTED_MODULE_1_react_emotion__["css"])('background-color:white;color:cornflowerblue;border:1px solid lightgreen;border-right:none;border-bottom:none;box-shadow:5px 5px 0 0 lightgreen,10px 10px 0 0 lightyellow;transition:all 0.1s linear;margin:3rem 0;padding:1rem 0.5rem;');
   var hoverStyles = /*#__PURE__*/Object(__WEBPACK_IMPORTED_MODULE_1_react_emotion__["css"])('&:hover{color:white;background-color:lightgray;border-color:aqua;box-shadow:-15px -15px 0 0 aqua,-30px -30px 0 0 cornflowerblue;}');
   var bounce = /*#__PURE__*/Object(__WEBPACK_IMPORTED_MODULE_1_react_emotion__["keyframes"])('from{transform:scale(1.01);}to{transform:scale(0.99);}');
   var Basic = /*#__PURE__*/__WEBPACK_IMPORTED_MODULE_1_react_emotion___default()('div', {
-    target: 'css-hxl9fq0'
+    target: 'css-1dnsltt0'
   })(basicStyles, ';');
   var Combined = /*#__PURE__*/__WEBPACK_IMPORTED_MODULE_1_react_emotion___default()('div', {
-    target: 'css-hxl9fq1'
+    target: 'css-1dnsltt1'
   })(basicStyles, ';', hoverStyles, ';& code{background-color:linen;}');
   var Animated = /*#__PURE__*/__WEBPACK_IMPORTED_MODULE_1_react_emotion___default()('div', {
-    target: 'css-hxl9fq2'
+    target: 'css-1dnsltt2'
   })(basicStyles, ';', hoverStyles, ';& code{background-color:linen;}animation:', function (props) {
     return props.animation;
   }, ' 0.2s infinite ease-in-out alternate;');
@@ -105,7 +110,7 @@ var _jsxFileName = '/Users/maupal/Lab/next-experiments/pages/index.jsx';
     {
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 59
+        lineNumber: 64
       }
     },
     __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
@@ -113,7 +118,7 @@ var _jsxFileName = '/Users/maupal/Lab/next-experiments/pages/index.jsx';
       {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 60
+          lineNumber: 65
         }
       },
       'Cool Styles'
@@ -123,7 +128,7 @@ var _jsxFileName = '/Users/maupal/Lab/next-experiments/pages/index.jsx';
       {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 61
+          lineNumber: 66
         }
       },
       'With ',
@@ -132,7 +137,7 @@ var _jsxFileName = '/Users/maupal/Lab/next-experiments/pages/index.jsx';
         {
           __source: {
             fileName: _jsxFileName,
-            lineNumber: 62
+            lineNumber: 67
           }
         },
         ':hover'
@@ -143,14 +148,13 @@ var _jsxFileName = '/Users/maupal/Lab/next-experiments/pages/index.jsx';
       Animated,
       { animation: bounce, __source: {
           fileName: _jsxFileName,
-          lineNumber: 64
+          lineNumber: 69
         }
       },
       'Let\'s bounce.'
     )
   );
 });
-//# sourceMappingURL=index.jsx.map
 
 /***/ }),
 

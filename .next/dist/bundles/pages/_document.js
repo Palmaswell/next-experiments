@@ -72,7 +72,7 @@ module.exports =
 /************************************************************************/
 /******/ ({
 
-/***/ "./pages/_document.js":
+/***/ "./pages/_document.jsx":
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -83,7 +83,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_next_document___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_next_document__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_emotion_server__ = __webpack_require__("emotion-server");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_emotion_server___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_emotion_server__);
-var _jsxFileName = '/Users/maupal/Lab/next-experiments/pages/_document.js';
+var _jsxFileName = '/Users/maupal/Lab/next-experiments/pages/_document.jsx';
 
 var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
 
@@ -198,7 +198,7 @@ var MyDocument = function (_Document) {
 /***/ 0:
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__("./pages/_document.js");
+module.exports = __webpack_require__("./pages/_document.jsx");
 
 
 /***/ }),

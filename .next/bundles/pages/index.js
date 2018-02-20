@@ -1045,8 +1045,8 @@ var unitless = {
 /* unused harmony export registered */
 /* unused harmony export inserted */
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return css; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "d", function() { return keyframes; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "c", function() { return injectGlobal; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "c", function() { return keyframes; });
+/* unused harmony export injectGlobal */
 /* unused harmony export fontFace */
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "b", function() { return getRegisteredStyles; });
 /* unused harmony export merge */
@@ -2457,7 +2457,6 @@ module.exports = ReactPropTypesSecret;
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_prop_types___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3_prop_types__);
 /* harmony namespace reexport (by used) */ __webpack_require__.d(__webpack_exports__, "a", function() { return __WEBPACK_IMPORTED_MODULE_2_emotion__["a"]; });
 /* harmony namespace reexport (by used) */ __webpack_require__.d(__webpack_exports__, "c", function() { return __WEBPACK_IMPORTED_MODULE_2_emotion__["c"]; });
-/* harmony namespace reexport (by used) */ __webpack_require__.d(__webpack_exports__, "d", function() { return __WEBPACK_IMPORTED_MODULE_2_emotion__["d"]; });
 
 
 
@@ -3865,20 +3864,25 @@ var _jsxFileName = '/Users/maupal/Lab/next-experiments/pages/index.jsx';
 
 
 
+// Adds server generated styles to emotion cache.
+// '__NEXT_DATA__.ids' is set in '_document.js'
+if (typeof window !== 'undefined') {
+  hydrate(window.__NEXT_DATA__.ids);
+}
 
 var _default = function _default() {
-  Object(__WEBPACK_IMPORTED_MODULE_1_react_emotion__["c" /* injectGlobal */])('html,body{padding:3rem 1rem;margin:0;background:papayawhip;min-height:100%;font-family:Helvetica,Arial,sans-serif;font-size:24px;}');
+  injectGlobal('html,body{padding:3rem 1rem;margin:0;background:papayawhip;min-height:100%;font-family:Helvetica,Arial,sans-serif;font-size:24px;}');
   var basicStyles = /*#__PURE__*/Object(__WEBPACK_IMPORTED_MODULE_1_react_emotion__["a" /* css */])('background-color:white;color:cornflowerblue;border:1px solid lightgreen;border-right:none;border-bottom:none;box-shadow:5px 5px 0 0 lightgreen,10px 10px 0 0 lightyellow;transition:all 0.1s linear;margin:3rem 0;padding:1rem 0.5rem;');
   var hoverStyles = /*#__PURE__*/Object(__WEBPACK_IMPORTED_MODULE_1_react_emotion__["a" /* css */])('&:hover{color:white;background-color:lightgray;border-color:aqua;box-shadow:-15px -15px 0 0 aqua,-30px -30px 0 0 cornflowerblue;}');
-  var bounce = /*#__PURE__*/Object(__WEBPACK_IMPORTED_MODULE_1_react_emotion__["d" /* keyframes */])('from{transform:scale(1.01);}to{transform:scale(0.99);}');
+  var bounce = /*#__PURE__*/Object(__WEBPACK_IMPORTED_MODULE_1_react_emotion__["c" /* keyframes */])('from{transform:scale(1.01);}to{transform:scale(0.99);}');
   var Basic = /*#__PURE__*/Object(__WEBPACK_IMPORTED_MODULE_1_react_emotion__["b" /* default */])('div', {
-    target: 'css-hxl9fq0'
+    target: 'css-1dnsltt0'
   })(basicStyles, ';');
   var Combined = /*#__PURE__*/Object(__WEBPACK_IMPORTED_MODULE_1_react_emotion__["b" /* default */])('div', {
-    target: 'css-hxl9fq1'
+    target: 'css-1dnsltt1'
   })(basicStyles, ';', hoverStyles, ';& code{background-color:linen;}');
   var Animated = /*#__PURE__*/Object(__WEBPACK_IMPORTED_MODULE_1_react_emotion__["b" /* default */])('div', {
-    target: 'css-hxl9fq2'
+    target: 'css-1dnsltt2'
   })(basicStyles, ';', hoverStyles, ';& code{background-color:linen;}animation:', function (props) {
     return props.animation;
   }, ' 0.2s infinite ease-in-out alternate;');
@@ -3887,7 +3891,7 @@ var _default = function _default() {
     {
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 59
+        lineNumber: 64
       }
     },
     __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
@@ -3895,7 +3899,7 @@ var _default = function _default() {
       {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 60
+          lineNumber: 65
         }
       },
       'Cool Styles'
@@ -3905,7 +3909,7 @@ var _default = function _default() {
       {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 61
+          lineNumber: 66
         }
       },
       'With ',
@@ -3914,7 +3918,7 @@ var _default = function _default() {
         {
           __source: {
             fileName: _jsxFileName,
-            lineNumber: 62
+            lineNumber: 67
           }
         },
         ':hover'
@@ -3925,7 +3929,7 @@ var _default = function _default() {
       Animated,
       { animation: bounce, __source: {
           fileName: _jsxFileName,
-          lineNumber: 64
+          lineNumber: 69
         }
       },
       'Let\'s bounce.'
@@ -3934,8 +3938,6 @@ var _default = function _default() {
 };
 
 /* harmony default export */ __webpack_exports__["default"] = (_default);
-//# sourceMappingURL=index.jsx.map
-
 ;
 
 (function () {

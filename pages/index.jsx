@@ -1,5 +1,10 @@
 import React from 'react';
-import styled, { keyframes, css, injectGlobal } from 'react-emotion';
+import styled, { keyframes, css } from 'react-emotion';
+// Adds server generated styles to emotion cache.
+// '__NEXT_DATA__.ids' is set in '_document.js'
+if (typeof window !== 'undefined') {
+    hydrate(window.__NEXT_DATA__.ids);
+}
 export default () => {
     injectGlobal `
     html, body {
@@ -64,4 +69,3 @@ export default () => {
       <Animated animation={bounce}>Let's bounce.</Animated>
     </div>);
 };
-//# sourceMappingURL=index.jsx.map
