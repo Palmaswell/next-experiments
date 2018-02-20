@@ -67,24 +67,34 @@ module.exports =
 /******/ 	__webpack_require__.p = "";
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 0);
+/******/ 	return __webpack_require__(__webpack_require__.s = 1);
 /******/ })
 /************************************************************************/
-/******/ ({
+/******/ ([
+/* 0 */
+/***/ (function(module, exports) {
 
-/***/ "./pages/_document.jsx":
+module.exports = require("react");
+
+/***/ }),
+/* 1 */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__(2);
+
+
+/***/ }),
+/* 2 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react__ = __webpack_require__("react");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_react__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_next_document__ = __webpack_require__("next/document");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_next_document__ = __webpack_require__(3);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_next_document___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_next_document__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_emotion_server__ = __webpack_require__("emotion-server");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_emotion_server__ = __webpack_require__(4);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_emotion_server___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_emotion_server__);
-var _jsxFileName = '/Users/maupal/Lab/next-experiments/pages/_document.jsx';
-
 var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
 
 var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
@@ -133,56 +143,22 @@ var MyDocument = function (_Document) {
     value: function render() {
       return __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
         'html',
-        {
-          __source: {
-            fileName: _jsxFileName,
-            lineNumber: 21
-          }
-        },
+        null,
         __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
           __WEBPACK_IMPORTED_MODULE_1_next_document__["Head"],
-          {
-            __source: {
-              fileName: _jsxFileName,
-              lineNumber: 22
-            }
-          },
+          null,
           __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
             'title',
-            {
-              __source: {
-                fileName: _jsxFileName,
-                lineNumber: 23
-              }
-            },
+            null,
             'With Emotion'
           ),
-          __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('style', { dangerouslySetInnerHTML: { __html: this.props.css }, __source: {
-              fileName: _jsxFileName,
-              lineNumber: 24
-            }
-          })
+          __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('style', { dangerouslySetInnerHTML: { __html: this.props.css } })
         ),
         __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
           'body',
-          {
-            __source: {
-              fileName: _jsxFileName,
-              lineNumber: 26
-            }
-          },
-          __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1_next_document__["Main"], {
-            __source: {
-              fileName: _jsxFileName,
-              lineNumber: 27
-            }
-          }),
-          __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1_next_document__["NextScript"], {
-            __source: {
-              fileName: _jsxFileName,
-              lineNumber: 28
-            }
-          })
+          null,
+          __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1_next_document__["Main"], null),
+          __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1_next_document__["NextScript"], null)
         )
       );
     }
@@ -194,35 +170,16 @@ var MyDocument = function (_Document) {
 /* harmony default export */ __webpack_exports__["default"] = (MyDocument);
 
 /***/ }),
-
-/***/ 0:
-/***/ (function(module, exports, __webpack_require__) {
-
-module.exports = __webpack_require__("./pages/_document.jsx");
-
-
-/***/ }),
-
-/***/ "emotion-server":
-/***/ (function(module, exports) {
-
-module.exports = require("emotion-server");
-
-/***/ }),
-
-/***/ "next/document":
+/* 3 */
 /***/ (function(module, exports) {
 
 module.exports = require("next/document");
 
 /***/ }),
-
-/***/ "react":
+/* 4 */
 /***/ (function(module, exports) {
 
-module.exports = require("react");
+module.exports = require("emotion-server");
 
 /***/ })
-
-/******/ });
-//# sourceMappingURL=_document.js.map
+/******/ ]);
